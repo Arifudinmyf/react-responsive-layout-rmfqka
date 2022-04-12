@@ -1,0 +1,47 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "loginCard"
+    "footer";
+  grid-template-rows: 1fr auto;
+}
+
+.react-logo {
+  width: 150px;
+  height: auto;
+  padding: 2em;
+}
+
+.login-container {
+  grid-area: loginCard;
+  justify-self: center;
+  text-align: center;
+}
+
+.login-card {
+  width: 380px;
+  height: 320px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-actions {
+  margin-top: 3em;
+}
+
+app-footer {
+  grid-area: footer;
+  font-size: 0.8rem;
+}
+
+@media(max-width: 768px) {
+  login-card {
+    width: 330px;
+  }
+}

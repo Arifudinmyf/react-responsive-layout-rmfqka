@@ -1,0 +1,25 @@
+.header {
+  display: grid;
+  grid-template-areas: "sidebarToggle navItems profile";
+  grid-template-columns: auto 1fr auto;
+
+  height: var(--header-height);
+  padding: 0.2em 1em;
+  box-sizing: border-box;
+}
+
+.sidebar-toggle {
+  grid-area: sidebarToggle;
+  display: none;
+}
+
+.profile-menu {
+  grid-area: profile;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block;
+  }
+}
